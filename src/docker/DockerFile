@@ -1,0 +1,9 @@
+FROM alpine/git
+
+FROM maven:3.5-jdk-8-alpine
+WORKDIR /app
+COPY --from=0 /app/CLBProject /app
+
+RUN 
+
+ENTRYPOINT mvn clean install && mvn tomcat7:run && /bin/bash
