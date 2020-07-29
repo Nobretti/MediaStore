@@ -1,0 +1,3 @@
+FROM httpd:latest
+WORKDIR /
+ADD ["./images", "/usr/local/apache2/htdocs"]

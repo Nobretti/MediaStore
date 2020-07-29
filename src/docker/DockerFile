@@ -1,8 +1,0 @@
-FROM opavlova/db-derby:latest
-WORKDIR /
-RUN git clone --single-branch -b dev https://github.com/Nobretti/MediaStore
-COPY ./MediaStore/src/database/mediaDB_Derby.sql ./db-derby-10.12.1.1-bin
-
-WORKDIR /db-derby-10.12.1.1-bin
-ENTRYPOINT java org.apache.derby.tools.ij
-CMD connect 'jdbc:derby:MediaStore;create=true' as 'MediaStore' user 'admin' password '123456'
