@@ -1,4 +1,4 @@
-package mediastore.database.entities;
+package mediastore.database.entity;
 
 import java.io.Serializable;
 import java.util.Date;

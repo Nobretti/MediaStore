@@ -1,4 +1,4 @@
-package mediastore.database.entities;
+package mediastore.database.entity;
 
 import java.io.Serializable;
 
@@ -37,12 +37,13 @@ public class Movies extends MediaStore implements Serializable {
 		this.director = director;
 	}
 	
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
+	
 	
 }

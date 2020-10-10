@@ -1,4 +1,4 @@
-package mediastore.database.entities;
+package mediastore.database.entity;
 
 import java.io.Serializable;
 import javax.persistence.*;
@@ -50,13 +50,13 @@ public class Application extends MediaStore implements Serializable {
 		this.utility = utility;
 	}
 
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
-
+	
 	
 }

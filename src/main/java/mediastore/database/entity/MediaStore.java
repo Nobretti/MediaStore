@@ -1,4 +1,4 @@
-package mediastore.database.entities;
+package mediastore.database.entity;
 
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
@@ -32,36 +32,12 @@ public abstract class MediaStore{
 	@Enumerated(EnumType.STRING)
 	protected Country country;
 
-	public abstract int getId();
+	public abstract Integer getId();
 	
-	public abstract void setId(int id);
+	public abstract void setId(Integer id);
 
-	public int getRate() {
-		return this.rate;
-	}
-
-	public void setRate(int rate) {
-		this.rate = rate;
-	}
-
-	public int getReleaseyear() {
-		return this.releaseyear;
-	}
-
-	public void setReleaseyear(int releaseyear) {
-		this.releaseyear = releaseyear;
-	}
-
-	public String getShortname() {
-		return this.shortname;
-	}
-
-	public void setShortname(String shortname) {
-		this.shortname = shortname;
-	}
-	
 	public String getDescription() {
-		return this.description;
+		return description;
 	}
 
 	public void setDescription(String description) {
@@ -69,7 +45,7 @@ public abstract class MediaStore{
 	}
 
 	public HumanState getHumanstate() {
-		return this.humanstate;
+		return humanstate;
 	}
 
 	public void setHumanstate(HumanState humanstate) {
@@ -77,7 +53,7 @@ public abstract class MediaStore{
 	}
 
 	public String getImgpath() {
-		return this.imgpath;
+		return imgpath;
 	}
 
 	public void setImgpath(String imgpath) {
@@ -85,11 +61,35 @@ public abstract class MediaStore{
 	}
 
 	public String getLink() {
-		return this.link;
+		return link;
 	}
 
 	public void setLink(String link) {
 		this.link = link;
+	}
+
+	public int getRate() {
+		return rate;
+	}
+
+	public void setRate(int rate) {
+		this.rate = rate;
+	}
+
+	public int getReleaseyear() {
+		return releaseyear;
+	}
+
+	public void setReleaseyear(int releaseyear) {
+		this.releaseyear = releaseyear;
+	}
+
+	public String getShortname() {
+		return shortname;
+	}
+
+	public void setShortname(String shortname) {
+		this.shortname = shortname;
 	}
 
 	public EnumMedia getMediatype() {
@@ -107,6 +107,7 @@ public abstract class MediaStore{
 	public void setCountry(Country country) {
 		this.country = country;
 	}
+
 
 	
 }

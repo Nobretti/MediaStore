@@ -1,4 +1,4 @@
-package mediastore.database.entities;
+package mediastore.database.entity;
 
 import java.io.Serializable;
 
@@ -35,13 +35,14 @@ public class Series extends MediaStore implements Serializable {
 	public Series() {
 	}
 
-	public int getId() {
-		return this.id;
+	public Integer getId() {
+		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
+	
 
 	public String getCompany() {
 		return this.company;
