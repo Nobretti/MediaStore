@@ -22,7 +22,7 @@ public abstract class MediaStore{
 
 	protected int rate;
 
-	protected int releaseyear;
+	protected String releaseYear;
 
 	protected String shortname;
 	
@@ -75,13 +75,14 @@ public abstract class MediaStore{
 	public void setRate(int rate) {
 		this.rate = rate;
 	}
+	
 
-	public int getReleaseyear() {
-		return releaseyear;
+	public String getReleaseYear() {
+		return releaseYear;
 	}
 
-	public void setReleaseyear(int releaseyear) {
-		this.releaseyear = releaseyear;
+	public void setReleaseYear(String releaseYear) {
+		this.releaseYear = releaseYear;
 	}
 
 	public String getShortname() {

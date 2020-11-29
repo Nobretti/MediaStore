@@ -3,8 +3,7 @@ package mediastore.global;
 public enum Country {
 
 	JP("Japan"),
-	EUR("Europe"),
-	PT("Portugal"),
+	EU("Europe"),
 	US("American");
 	
 	private String label;

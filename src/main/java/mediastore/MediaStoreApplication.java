@@ -10,5 +10,4 @@ public class MediaStoreApplication {
 	public static void main(String[] args) {
         SpringApplication.run(MediaStoreApplication.class, args);
 	}
-
 }

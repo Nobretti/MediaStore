@@ -100,14 +100,6 @@ public class Series extends MediaStore implements Serializable {
 		this.rate = rate;
 	}
 
-	public int getReleaseyear() {
-		return this.releaseyear;
-	}
-
-	public void setReleaseyear(int releaseyear) {
-		this.releaseyear = releaseyear;
-	}
-
 	public int getSeasons() {
 		return this.seasons;
 	}

@@ -15,7 +15,7 @@ import javax.persistence.Table;
  * 
  */
 @Entity
-@Table(name="ROMS")
+@Table(name="Roms")
 public class Roms extends MediaStore implements Serializable {
 	private static final long serialVersionUID = 1L;
 
@@ -26,9 +26,7 @@ public class Roms extends MediaStore implements Serializable {
 	
 	private String company;
 
-	private String romtype;
-
-	private String console;
+	private String developer;
 	
 	public Roms() {
 	}
@@ -39,20 +37,14 @@ public class Roms extends MediaStore implements Serializable {
 	public void setCompany(String company) {
 		this.company = company;
 	}
-	public String getRomtype() {
-		return this.romtype;
-	}
-
-	public void setRomtype(String romtype) {
-		this.romtype = romtype;
-	}
-	public String getConsole() {
-		return console;
-	}
-	public void setConsole(String console) {
-		this.console = console;
-	}
 	
+	
+	public String getDeveloper() {
+		return developer;
+	}
+	public void setDeveloper(String developer) {
+		this.developer = developer;
+	}
 	public Integer getId() {
 		return id;
 	}

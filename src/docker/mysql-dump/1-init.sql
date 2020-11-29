@@ -5,7 +5,7 @@ CREATE TABLE Games
 	id MEDIUMINT NOT NULL AUTO_INCREMENT,
 	shortName varchar(255),
 	description varchar(2555),
-	releaseYear int,
+	releaseYear varchar(255),
 	imgPath varchar(255),
 	rate int,
 	link varchar(255),
@@ -23,7 +23,7 @@ CREATE TABLE Movies
 	id MEDIUMINT NOT NULL AUTO_INCREMENT,
 	shortName varchar(255),
 	description varchar(2555),
-	releaseYear int,
+	releaseYear varchar(255),
 	imgPath varchar(255),
         rate int,
 	link varchar(255),
@@ -39,7 +39,7 @@ CREATE TABLE Series
 	id MEDIUMINT NOT NULL AUTO_INCREMENT,
 	shortName varchar(255),
 	description varchar(2555),
-	releaseYear int,
+	releaseYear varchar(255),
 	imgPath varchar(255),
         rate int,
 	link varchar(255),
@@ -58,7 +58,7 @@ CREATE TABLE Albums
 	id MEDIUMINT NOT NULL AUTO_INCREMENT,
 	shortName varchar(255),
 	description varchar(2555),
-	releaseYear int,
+	releaseYear varchar(255),
 	imgPath varchar(255),
 	rate int,
 	link varchar(255),
@@ -77,7 +77,7 @@ CREATE TABLE Applications
 	id MEDIUMINT NOT NULL AUTO_INCREMENT,
 	shortName varchar(255),
 	description varchar(2555),
-	releaseYear int,
+	releaseYear varchar(255),
 	imgPath varchar(255),
 	rate int,
 	link varchar(255),
@@ -95,7 +95,7 @@ CREATE TABLE EBooks
 	id MEDIUMINT NOT NULL AUTO_INCREMENT,
 	shortName varchar(255),
 	description varchar(2555),
-	releaseYear int,
+	releaseYear varchar(255),
 	imgPath varchar(255),
 	rate int,
 	link varchar(255),
@@ -113,14 +113,13 @@ CREATE TABLE Roms
 	shortName varchar(255),
 	description varchar(2555),
 	imgPath varchar(255),
-	releaseYear int,
+	releaseYear varchar(255),
 	rate int,
 	link varchar(255),
 	mediaType varChar(100),
 	humanState varChar(100),
-	company varchar(255),
-	type varchar(255),
-	romType varchar(255),
+	company varchar(150),
+	developer varchar(150),
 	country varchar(10),
 	CONSTRAINT rateRom_100 CHECK (rate <= 100 AND rate >= 0),
 	CONSTRAINT roms_pk PRIMARY KEY (id)
@@ -131,7 +130,7 @@ CREATE TABLE Collections
 	shortName varchar(255),
 	description varchar(2555),
 	imgPath varchar(255),
-	releaseYear int,
+	releaseYear varchar(255),
 	rate int,
 	link varchar(255),
 	mediaType varChar(100),
@@ -153,16 +152,3 @@ CREATE TABLE Users
 	email varchar(255),
 	CONSTRAINT user_pk PRIMARY KEY (userId)
 );
-CREATE TABLE News
-(
-    newsId MEDIUMINT NOT NULL AUTO_INCREMENT,
-    title varchar(255),
-    content varchar(255),
-    usernewsId int not null,
-    newsdate date,
-    CONSTRAINT news_pk PRIMARY KEY (newsId),
-    CONSTRAINT users_fk
-    
-);
-
-insert into Games(shortName, description, releaseYear, imgPath, rate, link, mediaType, humanState, company, type, os, country) values ('Game1','This is the game description for game1',1994,'',23,'','PCDOS','DONE','Konami','','GAME_BOY','Japan');      
