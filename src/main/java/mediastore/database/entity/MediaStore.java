@@ -2,6 +2,7 @@ package mediastore.database.entity;
 
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 
 import mediastore.global.Country;
@@ -10,6 +11,9 @@ import mediastore.global.HumanState;
 
 @MappedSuperclass
 public abstract class MediaStore{
+	
+	@Id
+	protected Integer id;
 
 	protected String description;
 
@@ -31,10 +35,6 @@ public abstract class MediaStore{
 	
 	@Enumerated(EnumType.STRING)
 	protected Country country;
-
-	public abstract Integer getId();
-	
-	public abstract void setId(Integer id);
 
 	public String getDescription() {
 		return description;
@@ -109,6 +109,12 @@ public abstract class MediaStore{
 		this.country = country;
 	}
 
+	public Integer getId() {
+		return id;
+	}
 
+	public void setId(Integer id) {
+		this.id = id;
+	}
 	
 }

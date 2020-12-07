@@ -2,7 +2,7 @@ CREATE DATABASE MediaStore;
 USE MediaStore;
 CREATE TABLE Games
 (
-	id MEDIUMINT NOT NULL AUTO_INCREMENT,
+	id int NOT NULL AUTO_INCREMENT,
 	shortName varchar(255),
 	description varchar(2555),
 	releaseYear varchar(255),
@@ -20,7 +20,7 @@ CREATE TABLE Games
 );
 CREATE TABLE Movies
 (
-	id MEDIUMINT NOT NULL AUTO_INCREMENT,
+	id int NOT NULL AUTO_INCREMENT,
 	shortName varchar(255),
 	description varchar(2555),
 	releaseYear varchar(255),
@@ -36,7 +36,7 @@ CREATE TABLE Movies
 );
 CREATE TABLE Series
 (
-	id MEDIUMINT NOT NULL AUTO_INCREMENT,
+	id int NOT NULL AUTO_INCREMENT,
 	shortName varchar(255),
 	description varchar(2555),
 	releaseYear varchar(255),
@@ -55,7 +55,7 @@ CREATE TABLE Series
 );
 CREATE TABLE Albums
 (
-	id MEDIUMINT NOT NULL AUTO_INCREMENT,
+	id int NOT NULL AUTO_INCREMENT,
 	shortName varchar(255),
 	description varchar(2555),
 	releaseYear varchar(255),
@@ -74,7 +74,7 @@ CREATE TABLE Albums
 );
 CREATE TABLE Applications
 (
-	id MEDIUMINT NOT NULL AUTO_INCREMENT,
+	id int NOT NULL AUTO_INCREMENT,
 	shortName varchar(255),
 	description varchar(2555),
 	releaseYear varchar(255),
@@ -92,7 +92,7 @@ CREATE TABLE Applications
 );
 CREATE TABLE EBooks
 (
-	id MEDIUMINT NOT NULL AUTO_INCREMENT,
+	id int NOT NULL AUTO_INCREMENT,
 	shortName varchar(255),
 	description varchar(2555),
 	releaseYear varchar(255),
@@ -109,7 +109,7 @@ CREATE TABLE EBooks
 );
 CREATE TABLE Roms
 (
-	id MEDIUMINT NOT NULL AUTO_INCREMENT,
+	id int NOT NULL AUTO_INCREMENT,
 	shortName varchar(255),
 	description varchar(2555),
 	imgPath varchar(255),
@@ -126,7 +126,7 @@ CREATE TABLE Roms
 );
 CREATE TABLE Collections
 (
-	id MEDIUMINT NOT NULL AUTO_INCREMENT,
+	id int NOT NULL AUTO_INCREMENT,
 	shortName varchar(255),
 	description varchar(2555),
 	imgPath varchar(255),
@@ -144,7 +144,7 @@ CREATE TABLE Collections
 );
 CREATE TABLE Users
 (
-	userId MEDIUMINT NOT NULL AUTO_INCREMENT,
+	userId int NOT NULL AUTO_INCREMENT,
 	userName varchar(255),
 	password varchar(25),
 	fullName varchar(255),

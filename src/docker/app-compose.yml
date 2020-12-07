@@ -12,8 +12,7 @@ services:
              limits:
                cpus: "0.3"
         ports:
-            - "80:80"
-            - "9990:9990"
+            - "8095:80"
   mysqlmedia:
         image: mysql:5.7
         deploy:

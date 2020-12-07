@@ -3,9 +3,6 @@ package mediastore.database.entity;
 import java.io.Serializable;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 
 
 /**
@@ -15,10 +12,6 @@ import javax.persistence.Id;
 @Entity
 public class Games extends MediaStore implements Serializable {
 	private static final long serialVersionUID = 1L;
-	
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	protected Integer id;
 	
 	private String company;
 	private String os;
@@ -31,17 +24,6 @@ public class Games extends MediaStore implements Serializable {
 
 	public static long getSerialversionuid() {
 		return serialVersionUID;
-	}
-	
-	@Override
-	public void setId(Integer id) {
-		this.id = id;
-	}
-
-
-	@Override
-	public Integer getId() {
-		return id;
 	}
 
 

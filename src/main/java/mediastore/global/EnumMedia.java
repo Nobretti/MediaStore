@@ -6,26 +6,26 @@ import java.util.stream.Collectors;
 
 public enum EnumMedia {
 
-	ALBUMS("Albums","Music",false,EnumMediaLogoImage.ALBUMS,"images/albuns"),
-	APPLICATIONS("Applications","Software",false,EnumMediaLogoImage.APPLICATIONS,"images/apps"),
-	COLLECTIONSTIOPATINHASNORMAL("Tio Patinhas","Collections",true,EnumMediaLogoImage.COLLECTIONSTIOPATINHASNORMAL,"images/collections/tp"),
-	COLLECTIONSTIOPATINHASSHOWDISNEY("Show Disney","Collections",true,EnumMediaLogoImage.COLLECTIONSTIOPATINHASSHOWDISNEY,"images/collections/sd"),
-	COLLECTIONSMATUTAZOS("Matutazos","Collections",false,EnumMediaLogoImage.COLLECTIONSMATUTAZOS,"images/collections/tazos"),
-	EBOOKS("EBooks","EBooks",true,EnumMediaLogoImage.EBOOKS,"images/docs"),
-	GAMESPC("Games PC", "Games",true,EnumMediaLogoImage.GAMESPC,"images/games/pc"),
-	GAMESDOS("Games DOS", "Games",false,EnumMediaLogoImage.GAMESDOS,"images/games/dos"),
-	MOVIESCINEMA("Movies Cinema", "Movies",true,EnumMediaLogoImage.MOVIESCINEMA,"images/movies/cine"),
-	MOVIESCARTOONS("Movies Cartoons", "Movies",true,EnumMediaLogoImage.MOVIESCARTOONS,"images/movies/cartoons"),
-	ROMSGAMEBOY("Game Boy", "Roms",false,EnumMediaLogoImage.ROMSGAMEBOY,"images/roms/gameboy"),
-	ROMSGAMEBOYCOLOR("Game Boy Color", "Roms",false,EnumMediaLogoImage.ROMSGAMEBOYCOLOR,"images/roms/gameboycolor"),
-	ROMSGAMEGEAR("Game Gear", "Roms",true,EnumMediaLogoImage.ROMSGAMEGEAR,"images/roms/gamegear"),
-	ROMSMEGADRIVE("Mega Drive", "Roms",true,EnumMediaLogoImage.ROMSMEGADRIVE,"images/roms/megadrive"),
-	ROMSSEGASATURN("Sega Saturn", "Roms",true,EnumMediaLogoImage.ROMSSEGASATURN,"images/roms/segasaturn"),
-	ROMSNES("Nintendo", "Roms",true,EnumMediaLogoImage.ROMSNES,"images/roms/nes"),
-	ROMSSNES("Super Nintendo", "Roms",false,EnumMediaLogoImage.ROMSSNES,"images/roms/snes"),
-	ROMSN64("Nintendo 64", "Roms",true,EnumMediaLogoImage.ROMSN64,"images/roms/n64"),
-	SERIESTV("Series TV", "Series",true,EnumMediaLogoImage.SERIESTV,"images/series/tvseries"),
-	SERIESCARTOONS("Series Cartoons", "Series",true,EnumMediaLogoImage.SERIESCARTOONS,"images/series/cartoons");
+	ALBUMS("Albums","Music",false,EnumMediaLogoImage.ALBUMS,"/albuns"),
+	APPLICATIONS("Applications","Software",false,EnumMediaLogoImage.APPLICATIONS,"/apps"),
+	COLLECTIONSTIOPATINHASNORMAL("Tio Patinhas","Collections",true,EnumMediaLogoImage.COLLECTIONSTIOPATINHASNORMAL,"/collections/tp"),
+	COLLECTIONSTIOPATINHASSHOWDISNEY("Show Disney","Collections",true,EnumMediaLogoImage.COLLECTIONSTIOPATINHASSHOWDISNEY,"/collections/sd"),
+	COLLECTIONSMATUTAZOS("Matutazos","Collections",false,EnumMediaLogoImage.COLLECTIONSMATUTAZOS,"/collections/tazos"),
+	EBOOKS("EBooks","EBooks",true,EnumMediaLogoImage.EBOOKS,"/docs"),
+	GAMESPC("Games PC", "Games",true,EnumMediaLogoImage.GAMESPC,"/games/pc"),
+	GAMESDOS("Games DOS", "Games",false,EnumMediaLogoImage.GAMESDOS,"/games/dos"),
+	MOVIESCINEMA("Movies Cinema", "Movies",true,EnumMediaLogoImage.MOVIESCINEMA,"/movies/cine"),
+	MOVIESCARTOONS("Movies Cartoons", "Movies",true,EnumMediaLogoImage.MOVIESCARTOONS,"/movies/cartoons"),
+	ROMSGAMEBOY("Game Boy", "Roms",false,EnumMediaLogoImage.ROMSGAMEBOY,"/roms/gameboy"),
+	ROMSGAMEBOYCOLOR("Game Boy Color", "Roms",false,EnumMediaLogoImage.ROMSGAMEBOYCOLOR,"/roms/gameboycolor"),
+	ROMSGAMEGEAR("Game Gear", "Roms",true,EnumMediaLogoImage.ROMSGAMEGEAR,"/roms/gamegear"),
+	ROMSMEGADRIVE("Mega Drive", "Roms",true,EnumMediaLogoImage.ROMSMEGADRIVE,"/roms/megadrive"),
+	ROMSSEGASATURN("Sega Saturn", "Roms",true,EnumMediaLogoImage.ROMSSEGASATURN,"/roms/segasaturn"),
+	ROMSNES("Nintendo", "Roms",true,EnumMediaLogoImage.ROMSNES,"/roms/nes"),
+	ROMSSNES("Super Nintendo", "Roms",false,EnumMediaLogoImage.ROMSSNES,"/roms/snes"),
+	ROMSN64("Nintendo 64", "Roms",true,EnumMediaLogoImage.ROMSN64,"/roms/n64"),
+	SERIESTV("Series TV", "Series",true,EnumMediaLogoImage.SERIESTV,"/series/tvseries"),
+	SERIESCARTOONS("Series Cartoons", "Series",true,EnumMediaLogoImage.SERIESCARTOONS,"/series/cartoons");
 
 	EnumMedia(String label, String category, Boolean coverRectangular, EnumMediaLogoImage logoPath, String imagesPath){
 		this.label = label;
