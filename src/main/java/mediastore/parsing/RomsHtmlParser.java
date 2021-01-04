@@ -97,8 +97,10 @@ public class RomsHtmlParser {
 			String link = removeStrSpecialChars(tds.get(0).select("a").attr("href"));
 			link = link.length() > 0 ? "https://en.wikipedia.org" + link : "";  
 
-			String sqlStatement = "insert into Roms(shortname, description, developer, company, mediaType, releaseYear, country, humanstate, rate, imgpath, link) values ('" + romTitle + "','" + 
+			String sqlStatement = "insert into Roms(shortname, description, developer, company, mediaType, releaseYear, country, humanstate, rate, imgPath, link) values ('" + romTitle + "','" + 
 					romTitle + "','"+ developer + "','" + company + "','"+ romType.name() +"','"+releasedIn+"','" + country + "','PROGRESSING',1, '" + romType.getImagesPath() + "/" + romTitleImg + ".jpg','"+link+"');\n";
+			
+			System.out.println(sqlStatement);
 			fos.write(sqlStatement.getBytes());
 		}
 	}
@@ -137,7 +139,7 @@ public class RomsHtmlParser {
 			link = link.length() > 0 ? "https://en.wikipedia.org" + link : "";
 
 			String sqlStatement = "insert into Roms(shortname, description, developer, company, mediaType, releaseYear, country, humanstate, rate, imgpath, link) values ('" + romTitle + "','" + 
-					romTitle + "','"+ developer + "','" + company + "','"+ romType.name() +"','"+releasedIn+"','" + country.name() + "','PROGRESSING',1, '/roms/gameboy/" + romTitleImg + ".jpg','"+link+"');\n";
+					romTitle + "','"+ developer + "','" + company + "','"+ romType.name() +"','"+releasedIn+"','" + country.name() + "','PROGRESSING',1, '" + romType.getImagesPath() + "/" + romTitleImg + ".jpg','"+link+"');\n";
 			fos.write(sqlStatement.getBytes());
 		}
 	}
