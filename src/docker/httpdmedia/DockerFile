@@ -1,3 +1,14 @@
 FROM httpd:latest
 WORKDIR /
-ADD ["./images", "/usr/local/apache2/htdocs"]
+ADD ["./images", "usr/local/apache2/htdocs"]
+ADD ["HttpdServer.class", "usr/local/apache2/htdocs"]
+ADD ["HttpdServer.java", "usr/local/apache2/htdocs"]
+# Install OpenJDK-8
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN mkdir -p /usr/share/man/man1 /usr/share/man/man2
+
+RUN apt-get update && \
+	apt-get install -y --no-install-recommends openjdk-11-jre
+	
+#ENTRYPOINT java "usr.local.apache2.htdocs.HttpdServer" &

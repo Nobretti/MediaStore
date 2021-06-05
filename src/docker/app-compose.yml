@@ -13,6 +13,7 @@ services:
                cpus: "0.3"
         ports:
             - "8095:80"
+            - "9876:9876"
   mysqlmedia:
         image: mysql:5.7
         deploy:
